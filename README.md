@@ -1,6 +1,6 @@
 # **Object-Detection**
 
-The python program scans the images, detects the object in the image, performs a random process  `i.e.. rotate, gray, sharpen, mirror, smooth` on the image and then relocate the image based on the content of the image.
+The python program scans the images, detects the object in the image, performs a random preprocessing  `i.e.. rotate, gray, sharpen, mirror, smooth` on the image and then relocate the image based on the content of the image.
 
 
 The whole project is divided into ***4 parts***. 
