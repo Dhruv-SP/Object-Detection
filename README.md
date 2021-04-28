@@ -57,6 +57,14 @@ Finally we run the model, there are 2 parameters to mention in the prediction me
 
 Next up we generate a random number between 0 to 4 which will determine the preprocessing operation to perform and append the metadata to variables and save the image to its appropriate folder.
 
-Finally we make an entry in the `t1.csv` about the sequence no, filename, destination, its type, what preprocessing is done etc..
+
+### part 4 A: Enter the processing details into a CSV
+---
+This part is actually implemented at the end of part 3 as we are iterating through the images already so no need to make another iteration and make program slower, so instead at the end of the loop we make an entry in the `t1.csv` about the sequence no, filename, destination, its type, what preprocessing is done etc.. of the image.
+
+### part 4 B: Generate and store statistics based on preprocessing operations performed
+---
+Here we'll use the dictionaries that we made in the very beginning that specifically store the count of specified operation on a certain type of image. we'll iterate through them and save as `s1.csv`.
+
 
 
