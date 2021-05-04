@@ -3,7 +3,7 @@
 The python program scans the images, detects the object in the image, performs a random preprocessing  `i.e.. rotate, gray, sharpen, mirror, smooth` on the image and then relocate the image based on the content of the image.
 
 
-The whole project is divided into ***4 parts***. 
+The whole project is divided into ***4 parts***.
 
 
 
@@ -40,7 +40,7 @@ Then we are creating CSV as `t1`, this csv will contain all the details of all t
 
 Next whole segment are declared procedure for each preprocessing operation, here details of preprocessing are appended to the `dest` variable and relocated and saved at the appropriate folder based on the content of the image.
 
-Now we are upto the model, Here we get the object of detecting model, and as every model requires to be trained before being used for prediction, this also needs to be trained, but there is a way to get around this lengthy and dedicating process, 
+Now we are upto the model, Here we get the object of detecting model, and as every model requires to be trained before being used for prediction, this also needs to be trained, but there is a way to get around this lengthy and dedicating process,
 that is by loading the pretrained model to our object. For that first we have to set the type of model that is going to be loaded which is retinanet by using `setModelTypeAsRetinaNet()`. now we set the path of pretrained model using `setModelPath` and passing the path of pretrained model to it.
 Finally loading it using `loadModel()`
 
@@ -65,6 +65,3 @@ This part is actually implemented at the end of part 3 as we are iterating throu
 ### part 4 B: Generate and store statistics based on preprocessing operations performed
 ---
 Here we'll use the dictionaries that we made in the very beginning that specifically store the count of specified operation on a certain type of image. we'll iterate through them and save as `s1.csv`.
-
-
-
