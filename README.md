@@ -44,6 +44,8 @@ Now we are upto the model, Here we get the object of detecting model, and as eve
 that is by loading the pretrained model to our object. For that first we have to set the type of model that is going to be loaded which is retinanet by using `setModelTypeAsRetinaNet()`. now we set the path of pretrained model using `setModelPath` and passing the path of pretrained model to it.
 Finally loading it using `loadModel()`
 
+Use the following link to download the ![Pre-trained model](https://github.com/OlafenwaMoses/ImageAI/releases/download/1.0/resnet50_coco_best_v2.0.1.h5)
+
 Great, now you have the model ready to be used for prediction.
 
 > But before getting to the prediction, one thing needs to be discussed, the model used `detectObjectsFromImage()` which will require you to pass the path where it will output the image with boxes drown around detected object,
